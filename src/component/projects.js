@@ -53,17 +53,17 @@ const Projects = () => {
             <ProjectCard 
                 title="Dentella" 
                 video={DentellaVideo}
-                description="Dentella is a platform designed to provide job opportunities for dental students..." 
+                description="Dentella is a platform designed to provide job opportunities for dental students, enabling them to connect with patients and offer low-cost or free treatments to help them pass their practical exams. Key features include allowing students to submit articles to aid patients, enabling patients to post requests for student assistance" 
             />
             <ProjectCard 
                 title="Restaurant" 
                 video={RestaurantVideo}
-                description="I created a restaurant website that showcases popular dishes..." 
+                description=" created a restaurant website that showcases popular dishes and their prices. Users can log in to access additional features like adding dishes to their favorites and purchasing them. The main page highlights the most popular items, providing an engaging browsing experience." 
             />
             <ProjectCard 
                 title="NFTs" 
                 video={NtfsVideo}
-                description="I created a project that displays popular NFT images..." 
+                description="I created a project that displays popular NFT images and their prices. The main page includes sections for pages, portfolio, shop, and blog, along with user statistics and total sales figures. Users can view and place bids on NFTs from this collection. The goal is to provide an engaging and informative platform for NFT enthusiasts." 
             />
         </div>
     );
