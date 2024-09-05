@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import "../style/style.css";
-import DentellaVideo from"../imgs/imgs/dentella.mp4"
-import NtfsVideo from"../imgs/imgs/ntfs.mp4"
-import RestaurantVideo from"../imgs/imgs/rest.mp4"
+import DentellaVideo from"../imgs/imgs/Dentella.mp4"
+import NtfsVideo from"../imgs/imgs/Ntfs.mp4"
+import RestaurantVideo from"../imgs/imgs/Rest.mp4"
 const ProjectCard = ({ title, description, video }) => {
     const videoRef = useRef(null);
 
