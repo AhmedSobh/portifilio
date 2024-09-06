@@ -45,7 +45,7 @@ function Login() {
         <video autoPlay muted loop id="background-video">
           <source src={videoSrc} type="video/mp4" />
         </video>
-        <div className='form-container p-3 rounded w-25'>
+        <div className='form-container  p-4 rounded  position-relative' style={{ width: '100%', maxWidth: '500px' }}>
           <form action='' onSubmit={handleSubmit}>
             <p ><strong> Login</strong></p>
             <div className='mb-3'>

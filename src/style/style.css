@@ -22,6 +22,7 @@
     background-size: cover;
 }
 .form-container{
+    width: auto;
     color: aliceblue;
     position: absolute;
     top: 50%;
