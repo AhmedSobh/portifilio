@@ -22,7 +22,6 @@ const ProjectCard = ({ title, description, video,gitHub }) => {
             videoRef.current.currentTime = 0;
         }
     };
-
     return (
         <div className="content container-fluid">
             <div className="left">

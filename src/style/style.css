@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 .video-container {
@@ -129,12 +130,19 @@
 
 /*homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
 .home-content {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+     padding: 50px;
     width: 90%;
-    height: 65vh;
+    min-height:65vh;
+    height: auto;
     margin: auto;
     background:linear-gradient(to right,#ffffff , #ffe1a439 , #ffffff );
+}
+.home-content .left{
+    flex: 1;
 }
 .home-content .left .icons{
     font-size: 2rem;
@@ -221,13 +229,20 @@
     left: 0%;
     color: black;
 }
+.home-content .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 .home-content .right .my-img{
-    width: 70%;
-    margin-left: 20%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 /*skillllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllls*/
 .skills{
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
     width: 90%;
     margin: auto;
     display: grid;
@@ -280,7 +295,8 @@
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin-top: 5%;
-    height: 460px;
+    min-height: 460px;
+    height: auto;
     background:linear-gradient(to right,#fff4e759 , #d1a0ff81 , #fff4e759 );
 }
 .projects .content .left{
@@ -355,30 +371,34 @@
 
 /*fooooooooooooooooooooooooooooooooooooooooooooooter*/
 
-.footer{
-    background:linear-gradient(to right,#fff0d31d , #ffe1a439 , #fff0d339 , #fff0d31d);
+.footer {
+    background: linear-gradient(to right, #fff0d31d, #ffe1a439, #fff0d339, #fff0d31d);
     margin: auto;
     width: 90%;
-    height:80vh;
+    min-height: 60vh;
+    height: auto;
     position: relative;
 }
-.footer .content{
-    text-align: center;
+
+.footer .content {
+    text-align:center;
 }
-.footer h1{
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    font-size: 4.5rem;
+
+.footer h1 {
+    position: static;
+    font-size: 4rem;
     max-width: 600px;
-    
+    margin: auto;
 }
-.footer .btn-group{
-    margin-top: 25%;
-    gap: 50px;
+
+.footer .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20px;
 }
-.footer button{
+
+.footer button {
     width: 170px;
     height: 50px;
     border-radius: 50px;
@@ -386,34 +406,182 @@
     font-size: 1.3rem;
     font-weight: 500;
 }
-.footer hr{
-    margin-top: 10%;
+
+.footer .bottom-hr {
+    margin-top: 5%;
 }
-.footer .bottom-content{
+
+.footer .bottom-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.5rem;
+    align-items: center;
+    font-size: 1.2rem;
     font-weight: 600;
 }
-.footer .bottom-content .left{
-    width: 450px;
+
+.footer .bottom-content .left .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
 }
-.footer .bottom-content .left i{
-    margin-left: 5%;
+
+.footer .bottom-content .left i {
+    font-size: 1.8rem;
+    color: #000;
 }
-.footer .bottom-content .left i:first-child{
-    margin-left: 0%;
-}
-.footer .bottom-content .right ul{
+
+.footer .bottom-content .right ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 30px;
 }
-.footer .bottom-content .right .list-group-item .active{
+
+.footer .bottom-content .right ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.footer .bottom-content .right ul li a.active {
     background: linear-gradient(90deg, #bc50ff, #ff8411, #fe9809);
     -webkit-background-clip: text;
-     color: transparent;
-     background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
+
+
+/*MEDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
+  
+  @media (max-width: 991px) and (min-width: 768px) {
+    .navbar ul {
+        visibility: hidden;
+    }
+    .projects .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .content .right .project-video-container{
+        margin-top: 0%;
+    }
+    .home-content {
+      display: block;
+      padding: 15px;
+      height: auto;
+    }
+    .home-content .left,
+    .home-content .right {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+    }
+  
+    .navbar ul li a {
+      padding: 8px 15px;
+      font-size: 1rem;
+    }
+  
+    .btn-group {
+      flex-direction: row;
+      gap: 10px;
+    }
+    .home-content .left .my-content span{
+        visibility: hidden;
+      }
+    .footer .bottom-content .right ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .projects .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects .content .right .project-video-container{
+        margin-top: 0%;
+    }
+    .btn-group {
+        flex-direction: row;
+        gap: 10px;
+      }
+      .navbar .name{
+        display: flex;
+        flex-direction: row;
+      }
+      .home-content .left .my-content span{
+        visibility: hidden;
+      }
+      .home-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .my-img {
+        margin-top: 20px;
+      }
+      .skills .left .programer_pic{
+        width: 100%;
+      }
+    .footer h1 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .footer .btn-group {
+        flex-direction: row;
+        margin-top: 10%;
+        gap: 20px;
+    }
+    .footer .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .bottom-content .right ul {
+        margin-top: 50%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-content {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .home-content .left,
+    .home-content .right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    .navbar ul li a {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+ 
+    .my-img {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+    
+
+  }
+  

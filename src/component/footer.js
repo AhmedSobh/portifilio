@@ -19,28 +19,28 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bottom-hr">
-                <hr></hr>
-                <div className="bottom-content">
-                    <div className="left">
-                        <div className="icons">
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-behance"></i>
-                        </div>
-                    </div>
-                    <div className="right">
-                        <ul className="list-group-item">
-                            <li><a href="#home" className="list-group-item active">Home</a></li>
-                            <li><a href="#skills" className="list-group-item">Skills</a></li>
-                            <li><a href="#projects" className="list-group-item">Projects</a></li>
-                            <li><a href="#contact" className="list-group-item">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <hr />
+    <div className="bottom-content">
+        <div className="left">
+            <div className="icons">
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-behance"></i>
             </div>
+        </div>
+        <div className="right">
+            <ul className="list-group-item">
+                <li><a href="#home" className="list-group-item active">Home</a></li>
+                <li><a href="#skills" className="list-group-item">Skills</a></li>
+                <li><a href="#projects" className="list-group-item">Projects</a></li>
+                <li><a href="#contact" className="list-group-item">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
         </div>
 
     )
