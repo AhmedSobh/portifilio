@@ -303,6 +303,7 @@
     min-height: 460px;
     height: auto;
     background:linear-gradient(to right,#fff4e759 , #d1a0ff81 , #fff4e759 );
+    overflow: hidden;
 }
 .projects .content .left{
     margin: 10%;
@@ -533,6 +534,13 @@
     }
     .skills .right .btn-group{
         gap: 5%;
+    }
+    .content .left h3{
+        max-width:fit-content;
+    }
+    .content .left .btn-group{
+        margin-top: 7%;
+        gap: 2%;
     }
     .projects .content .right .project-video-container{
         margin-top: 0%;
